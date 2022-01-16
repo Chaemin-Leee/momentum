@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentum</title>
+</head>
+
+<body>
+    <!-- Show clock, location, weather -->
+    <header class="info">
+        <div id="clock">
+            <span>00:00:00</span>
+        </div>
+        <div>
+            <span id="location"></span>
+            <span id="weather"></span>
+        </div>
+    </header>
+
+    <!-- Show Content -->
+    <section>
+        <!-- Login Page -->
+        <form class="login_page">
+            <span>LOGIN</span>
+            <input type="text" placeholder="Enter your name.">
+            <span>GUEST LOG IN</span>
+        </form>
+
+        <!-- After login, show this todo list Page -->
+        <div class="hidden">
+            <form class="todo-form">
+                <span id="userName"></span>, you have to...
+                <input type="text" placeholder="What do you have to do?">
+                <button> ADD </button>
+            </form>
+            <ul id="todo-list"></ul>
+        </div>
+    </section>
+    <footer>
+        <div class="quotes">
+            <span></span>
+            <span></span>
+        </div>
+    </footer>
+</body>
+
+</html>
