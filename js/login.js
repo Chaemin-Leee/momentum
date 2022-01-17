@@ -22,13 +22,16 @@ function handleLogin(event){
 }
 
 function guestLogin(){
-    paintTodo("Guest,");
+    paintTodo("Guest");
 }
 
-loginForm.addEventListener("submit", handleLogin);
-guestBtn.addEventListener("click", guestLogin);
+
+
 
 const savedName = localStorage.getItem(USER_NAME_KEY);
 if(savedName){
     paintTodo(savedName);
+}else{
+    loginForm.addEventListener("submit", handleLogin);
+    guestBtn.addEventListener("click", guestLogin);
 }
