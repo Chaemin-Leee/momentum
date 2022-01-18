@@ -25,9 +25,6 @@ function guestLogin(){
     paintTodo("Guest");
 }
 
-
-
-
 const savedName = localStorage.getItem(USER_NAME_KEY);
 if(savedName){
     paintTodo(savedName);
